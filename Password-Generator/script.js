@@ -9,10 +9,9 @@ const generatePassword = (formData) => {
     const isSymbols = formData.get("symbols");
     const isNumbers = formData.get("numbers");
     const isUppercase = formData.get("uppercase");
-    const isLowercase = formData.get("lowercase");
 
     let password = "";
-    const lowerCharset = isLowercase ? "abcdefghijklmnopqrstuvwxyz" : "";
+    const lowerCharset = "abcdefghijklmnopqrstuvwxyz";
     const upperCharset = isUppercase ? "ABCDEFGHIJKLMNOPQRSTUVWXYZ" : "";
     const symbols = isSymbols ? "!@#$%^&*()_+~|}{[]:;?><,./-=" : "";
     const numbers = isNumbers ? "0123456789" : "";
@@ -26,11 +25,36 @@ const generatePassword = (formData) => {
     return password;
 };
 
-document.querySelector("form").addEventListener("submit", function (e) {
+const copyPassword = (password, id) => {
+    navigator.clipboard.writeText(password);
+
+    const style = document.createElement("style");
+        style.innerHTML = `
+        #${id}::after {
+            content: "📋";
+        }
+    `;
+
+    document.body.appendChild(style);
+    setTimeout(() => {
+        style.remove();
+    }, 1000);
+};
+
+document.querySelector("form").addEventListener("submit", (e) => {
     e.preventDefault();
 
     const formData = new FormData(form, generateBtn);
 
     passwordOne.textContent = generatePassword(formData);
     passwordTwo.textContent = generatePassword(formData);
+});
+
+passwordOne.addEventListener('click', (e) => {
+    console.log(e.target.textContent, e.target.id);
+    copyPassword(e.target.textContent, e.target.id);
+});
+
+passwordTwo.addEventListener('click', (e) => {
+    copyPassword(e.target.textContent, e.target.id);
 });
