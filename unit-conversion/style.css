@@ -1,0 +1,122 @@
+:root {
+    --dark-color: #1C1C1C;
+    --dark-blue-color: #1F2937;
+    --main-color: #6943FF;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--dark-color);
+}
+
+
+::selection {
+    color: var(--main-color);
+    background-color: var(--dark-blue-color);
+}
+
+.container {
+    color: #FFFFFF;
+    background-color: var(--dark-blue-color);
+
+    width: 550px;
+    height: 729px;
+
+    margin: 3.125em auto;
+    /* padding: 3.125em; */
+
+    text-align: center;
+}
+
+.heading {
+    color: #FFFFFF;
+    background-color: var(--main-color);
+    text-align: center;
+    font-family: Inter, 'Arial Narrow Bold', sans-serif;
+    padding: 2.125em 3.125em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.875em;
+}
+.heading h1 {
+    font-size: 1.75em;
+    font-weight: 800;
+    margin: 0;
+}
+.heading input {
+    width: 117px;
+    height: 83px;
+
+    text-align: center;
+    font-size: 3.625em;
+    font-weight: 800;
+    line-height: 1.5625em;
+
+    background-color: transparent;
+    color: #FFFFFF;
+    border: 2px solid #D1D5DB;
+    border-radius: 0.3125em;
+}
+.heading input:focus {
+    outline: none;
+}
+.heading button {
+    width: 117px;
+    height: 42px;
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5em;
+
+    color: #3d3d3d;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 0.3125em;
+
+    cursor: pointer;
+    box-shadow: 0px 1px 2px 0px #0000000D;
+}
+.heading button:hover {
+    background-color: #e5e5e5;
+}
+
+.main {
+    padding: 2.25em 1.25em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5625em;
+
+    background-color: #1F2937;
+}
+.main div {
+    background-color: #273549;
+    border: none;
+    border-radius: 0.3125em;
+    padding: 1.875em 4.6875em 1.25em 4.6875em;
+    font-family: Infer, sans-serif;
+}
+.main div h2 {
+    font-size: 1.25em;
+    font-weight: 600;
+    line-height: 1.5em;
+
+    margin: 0 0  10px 0;
+
+    color: #CCC1FF;
+}
+.main div p {
+    font-size: 0.875em;
+    font-weight: 400;
+    line-height: 1.25em;
+
+    margin: 0;
+
+    color: #FFFFFF;
+}
