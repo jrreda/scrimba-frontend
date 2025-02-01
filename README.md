@@ -7,6 +7,7 @@
 - [Password Generator](./Password-Generator)
 - [Unit Conversion](./unit-conversion)
 - [oldagram](./oldagram)
+- [Leads Tracker - chrome extension](./leads-tracker)
 
 ## Resources
 - [Scrimba](https://scrimba.com/)
