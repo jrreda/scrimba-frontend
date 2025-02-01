@@ -8,6 +8,8 @@
 - [Unit Conversion](./unit-conversion)
 - [oldagram](./oldagram)
 - [Leads Tracker - chrome extension](./leads-tracker)
+- [Twimba - Twitter x Scrimba](./twimba)
+<!-- - [NTF responsive site](./ntf-site) -->
 
 ## Resources
 - [Scrimba](https://scrimba.com/)

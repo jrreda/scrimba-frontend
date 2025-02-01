@@ -1,5 +1,5 @@
 {
-  "name": "Scrim-s01uaas",
+  "name": "leads-tracker",
   "description": "https://scrimba.com/the-frontend-developer-career-path-c0j/~09h",
   "scripts": {
     "start": "vite",
