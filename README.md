@@ -6,6 +6,7 @@
 - [Basketball Scoreboard](./Basketball-Scoreboard)
 - [Password Generator](./Password-Generator)
 - [Unit Conversion](./unit-conversion)
+- [oldagram](./oldagram)
 
 ## Resources
 - [Scrimba](https://scrimba.com/)
