@@ -10,6 +10,7 @@
 - [Leads Tracker - chrome extension](./leads-tracker)
 - [Twimba - Twitter x Scrimba](./twimba)
 - [Coworking Space site](./coworking-space)
+- [Color Scheme Generator](./color-scheme-generator)
 <!-- - [NTF responsive site](./ntf-site) -->
 
 ## Resources
