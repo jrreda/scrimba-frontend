@@ -8,14 +8,16 @@
 -   [Basketball Scoreboard](./Basketball-Scoreboard)
 -   [Password Generator](./Password-Generator)
 -   [Unit Conversion](./unit-conversion)
--   [oldagram](./oldagram)
+-   [Oldagram](./oldagram) (old instagram homepage clone)
 -   [Leads Tracker - chrome extension](./leads-tracker)
 -   [Twimba - Twitter x Scrimba](./twimba)
 -   [Coworking Space site](./coworking-space)
 -   [Color Scheme Generator](./color-scheme-generator)
 -   [Movie Watchlist](./movie-watchlist)
+-   [Learning Blog](./learning-blog) (mobile first)
 <!-- - [NTF responsive site](./ntf-site) -->
 
 ## Resources
 
 -   [Scrimba](https://scrimba.com/)
+-   Lots of Youtube videos
