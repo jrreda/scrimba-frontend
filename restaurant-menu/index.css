@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Smythe', sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+header {
+    background-image: url(./images/header.png);
+    background-size: cover;
+    background-position: center;
+    height: 168px;
+    color: white;
+    padding: 46px;
+}
+header h1 {
+    font-size: 39px;
+    font-weight: 400;
+    line-height: 32px;
+    margin: 0
+}
+header h2 {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 42px;
+    margin: 0;
+}
+
+#menu {
+    padding: 67px 46px 45px 46px;
+}
+#menu .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #D2D2D2;
+}
+#menu .item .info {
+    flex: 0 0 60%;
+}
+#menu .item .name {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0;
+}
+#menu .item .description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #8B8B8B;
+    margin: 0;
+}
+#menu .item .price {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    margin: 0;
+}
+#menu .item:last-child {
+    margin: 0;
+}
+#menu .item .add-btn {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #3C3C3C;
+    background-color: white;
+    border: 1px solid #DEDEDE;
+    border-radius: 50%;
+    padding: 0;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+}
+
+#order {
+    padding: 0 46px 67px 46px;
+}
+#order h3 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 18px;
+}
+#order .items .item,
+#order .total-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#order .items .item .left p {
+    display: inline-block;
+    margin: 0;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 18px;
+}
+#order .items .item .left small {
+    margin-left: 12px;
+    color: #8B8B8B;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+}
+#order .items .item .right {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+#order .items {
+    padding-bottom: 28px;
+    border-bottom: 2px solid #393333;
+}
+#order button {
+    background: #16DB99;
+    color: #ffffff;
+    height: 60px;
+    width: 100%;
+    border: none;
+    margin-top: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    cursor: pointer;
+}
