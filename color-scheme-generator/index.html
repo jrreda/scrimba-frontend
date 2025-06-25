@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Color Scheme Switcher</title>
+</head>
+
+<body>
+  <h1>Color Scheme Switcher</h1>
+  <h4 id="error-text" class="error"></h4>
+  <div class="header">
+    <input type="color" id="color-picker" value="#ff0000">
+    <select id="scheme-mode">
+      <option value="monochrome">Monochrome</option>
+      <option value="monochrome-dark">Monochrome Dark</option>
+      <option value="monochrome-light">Monochrome Light</option>
+      <option value="analogic">Analogic</option>
+      <option value="complement">Complement</option>
+      <option value="analogic-complement">Analogic Complement</option>
+      <option value="triad">Triad</option>
+    </select>
+    <button id="get-scheme">Get color scheme</button>
+  </div>
+
+  <div class="color-scheme" id="color-scheme-container"></div>
+
+  <div class="color-codes" id="color-codes"></div>
+
+  <script type="module" src="script.js"></script>
+</body>
+
+</html>
