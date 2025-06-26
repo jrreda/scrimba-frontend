@@ -37,6 +37,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #fff;
 }
 header a {
     color: #0e0e0e;
@@ -73,9 +74,6 @@ header nav a {
 
 /* footer */
 footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
     width: 100%;
     padding: 37px;
     text-align: center;
@@ -104,5 +102,116 @@ footer p {
 
 /* Home page */
 .hero {
-    padding: 0 var(--main-padding);
+    padding: var(--main-padding);
+    background-image: url(/public/hero.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-family: Source Sans Pro;
+}
+.hero small {
+    font-family: Source Sans Pro;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+.hero h1 {
+    font-family: Source Sans Pro;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 108%;
+    letter-spacing: -3%;
+    margin-block: 0.5rem;
+}
+.hero p {
+    font-family: Source Sans Pro;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 110%;
+    letter-spacing: 0%;
+}
+
+/* Posts */
+.posts {
+    padding: var(--main-padding);
+}
+.posts article {
+    margin-bottom: 2.5rem;
+}
+.posts article img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+    border-radius: 3px;
+}
+.posts article small {
+    font-family: Source Sans Pro;
+    font-weight: 400;
+    font-size: 14.17px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+.posts article h2 {
+    font-family: Source Sans Pro;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 108%;
+    letter-spacing: 0%;
+    margin-block: 0.5rem;
+    color: #141414;
+}
+.posts article p {
+    font-family: Source Sans Pro;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+    letter-spacing: 0%;
+    color: #505050;
+}
+.posts article.post-4,
+.posts article.post-5,
+.posts article.post-6 {
+    display: none;
+}
+.posts .view-more {
+    display: block;
+    font-family: Source Sans Pro;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 0%;
+    margin-bottom: 1rem;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .posts article.post-4,
+    .posts article.post-5,
+    .posts article.post-6 {
+        display: block;
+    }
+    .posts {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .hero {
+        height: 400px;
+    }
+    .hero h1 {
+        font-size: 48px;
+    }
+    .hero p {
+        font-size: 18px;
+    }
 }
