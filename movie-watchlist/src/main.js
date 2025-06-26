@@ -55,10 +55,7 @@ async function fetchMovies(searchTerm) {
         // Save movies to localStorage
         localStorage.setItem("movies", JSON.stringify(data.Search));
     } else {
-        alert(
-            "Unable to find what you’re looking for. Please try another search."
-        );
-
+        // display "not found" message
         const notFoundText = document.createElement("p");
         notFoundText.classList.add("not-found-text");
         notFoundText.textContent =
@@ -119,7 +116,7 @@ async function displayMovies(movies) {
         addToWatchlistButton.addEventListener("click", () => {
             // Add the movie to local storage
             const savedMovies =
-                JSON.parse(localStorage.getItem("wishliist-movies")) || [];
+                JSON.parse(localStorage.getItem("watchlist-movies")) || [];
 
             // Check if the movie is already in the watchlist
             const isMovieInWatchlist = savedMovies.some(
@@ -129,7 +126,7 @@ async function displayMovies(movies) {
             if (!isMovieInWatchlist) {
                 savedMovies.push(movie);
                 localStorage.setItem(
-                    "wishliist-movies",
+                    "watchlist-movies",
                     JSON.stringify(savedMovies)
                 );
             }
