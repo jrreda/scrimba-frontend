@@ -1,19 +1,19 @@
 :root {
-    /* font-family: Source Sans Pro, Helvetica, Arial, sans-serif;
-    line-height: 1.25;
-    font-weight: 400;
-    letter-spacing: 0%; */
-
-    /* color-scheme: light dark; */
-    /* color: rgba(255, 255, 255, 0.87);
-    background-color: #242424; */
-
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    --main-padding: 20px;
+    --main-padding: 1.25rem;
+}
+
+/* Respect user's motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
 }
 
 * {
@@ -24,7 +24,14 @@
 
 body {
     margin: 0;
-    min-width: 320px;
+    min-width: 20rem;
+}
+
+/* Add loading optimization */
+img {
+    height: auto;
+    max-width: 100%;
+    loading: lazy;
 }
 
 /* header */
@@ -49,12 +56,9 @@ header .logo {
     gap: 0.1rem;
     font-family: Roboto;
     font-weight: 700;
-    font-size: 13.55px;
+    font-size: 0.875rem;
     line-height: 108%;
     letter-spacing: -3%;
-}
-header .logo:hover {
-    color: #555;
 }
 header nav ul {
     list-style: none;
@@ -67,15 +71,16 @@ header nav a {
     color: #090909;
     font-family: Source Sans Pro;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 100%;
     letter-spacing: 0%;
+    text-transform: uppercase;
 }
 
 /* footer */
 footer {
     width: 100%;
-    padding: 37px;
+    padding: 2.3125rem;
     text-align: center;
     background-color: #202020;
 }
@@ -84,7 +89,7 @@ footer a {
     text-decoration: none;
     font-family: Source Sans Pro;
     font-weight: 700;
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 108%;
     letter-spacing: -3%;
 }
@@ -95,7 +100,7 @@ footer p {
     color: #d7d7d7;
     font-family: Source Sans Pro;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 125%;
     letter-spacing: 0%;
 }
@@ -108,7 +113,7 @@ footer p {
     background-position: center;
     background-repeat: no-repeat;
     color: #fff;
-    height: 300px;
+    height: 18.75rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -117,14 +122,14 @@ footer p {
 .hero small {
     font-family: Source Sans Pro;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 100%;
     letter-spacing: 0%;
 }
 .hero h1 {
     font-family: Source Sans Pro;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 108%;
     letter-spacing: -3%;
     margin-block: 0.5rem;
@@ -132,7 +137,7 @@ footer p {
 .hero p {
     font-family: Source Sans Pro;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 110%;
     letter-spacing: 0%;
 }
@@ -148,19 +153,19 @@ footer p {
     width: 100%;
     height: auto;
     margin-bottom: 0.5rem;
-    border-radius: 3px;
+    border-radius: 0.1875rem;
 }
 .posts article small {
     font-family: Source Sans Pro;
     font-weight: 400;
-    font-size: 14.17px;
+    font-size: 0.875rem;
     line-height: 100%;
     letter-spacing: 0%;
 }
 .posts article h2 {
     font-family: Source Sans Pro;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 108%;
     letter-spacing: 0%;
     margin-block: 0.5rem;
@@ -169,7 +174,7 @@ footer p {
 .posts article p {
     font-family: Source Sans Pro;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 125%;
     letter-spacing: 0%;
     color: #505050;
@@ -183,7 +188,7 @@ footer p {
     display: block;
     font-family: Source Sans Pro;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 100%;
     letter-spacing: 0%;
     text-align: center;
@@ -203,14 +208,14 @@ footer p {
 .post small {
     color: #151515;
     font-weight: 400;
-    font-size: 14.17px;
+    font-size: 0.875rem;
     line-height: 100%;
     letter-spacing: 0%;
 }
 .post h1 {
     color: #141414;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 108%;
     letter-spacing: -3%;
     margin-block: 1rem;
@@ -218,7 +223,7 @@ footer p {
 .post img {
     width: 100%;
     margin-block: 2rem;
-    border-radius: 3px;
+    border-radius: 0.1875rem;
 }
 .info {
     display: flex;
@@ -230,20 +235,20 @@ footer p {
 }
 .info .title {
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 100%;
     letter-spacing: 0%;
 }
 .info .desc {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 100%;
     letter-spacing: 0%;
 }
 .posts h3 {
     font-family: Source Sans Pro;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 100%;
     letter-spacing: 0%;
     text-align: center;
@@ -259,7 +264,7 @@ footer p {
 .about h1 {
     font-family: Source Sans Pro;
     font-weight: 700;
-    font-size: 34.84px;
+    font-size: 2.125rem;
     line-height: 108%;
     letter-spacing: -3%;
     color: #151515;
@@ -271,23 +276,99 @@ footer p {
 
 /* Media Queries */
 @media (min-width: 768px) {
-    .posts article.post-4,
-    .posts article.post-5,
-    .posts article.post-6 {
-        display: block;
+    :root {
+        --main-padding: 3rem;
     }
+
+    body {
+        max-width: 71.25rem;
+        margin: 0 auto;
+    }
+
+    header {
+        padding: 1.5rem 3.375rem;
+    }
+    header .logo {
+        font-size: 1.25rem;
+    }
+    header .logo img {
+        width: 2.125rem;
+        margin-right: 0.2rem;
+    }
+    header nav a {
+        font-size: 1rem;
+    }
+
+    /* Home page */
+    .hero {
+        max-height: 30rem;
+    }
+    .hero small {
+        font-size: 1rem;
+    }
+    .hero h1 {
+        font-size: 2.5rem;
+        margin-block: 1rem;
+    }
+    .hero p {
+        font-size: 1rem;
+        max-width: 70%;
+    }
+
     .posts {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        margin-bottom: 0;
     }
-    .hero {
-        height: 400px;
+    .posts article {
+        max-width: 19.3125rem;
+        margin-bottom: 2rem;
     }
-    .hero h1 {
-        font-size: 48px;
+    .posts article.article-4,
+    .posts article.article-5,
+    .posts article.article-6 {
+        display: block;
+        margin-bottom: 0;
     }
-    .hero p {
-        font-size: 18px;
+    .posts .view-more {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    /* Main Post */
+    .post {
+        margin: 0 auto;
+    }
+    .post .header {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .post img {
+        max-height: 30.5rem;
+        object-fit: cover;
+    }
+    .info {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .posts h3 {
+        width: 100%;
+    }
+
+    /* About */
+    .about {
+        padding-bottom: 0;
+    }
+    .about .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+    .about .header .author {
+        display: flex;
+        flex-direction: column;
     }
 }
