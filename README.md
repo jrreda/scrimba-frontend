@@ -16,6 +16,7 @@
 -   [Movie Watchlist](./movie-watchlist)
 -   [Learning Blog](./learning-blog) (mobile first)
 -   [Digital Business Card](./digital-business-card) (React)
+-   [404 page](./404-page) (Tailwind CSS)
 <!-- - [NTF responsive site](./ntf-site) -->
 
 ## Resources
