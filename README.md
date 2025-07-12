@@ -1,6 +1,6 @@
 # scrimba-frontend
 
-[Scrimbe Frontend Career Path](https://scrimba.com/the-frontend-developer-career-path-c0j) &amp; courses projects
+[Scrimba Frontend Career Path](https://scrimba.com/the-frontend-developer-career-path-c0j) &amp; courses projects
 
 ## Projects
 
@@ -17,6 +17,8 @@
 -   [Learning Blog](./learning-blog) (mobile first)
 -   [Digital Business Card](./digital-business-card) (React)
 -   [404 page](./404-page) (Tailwind CSS)
+-   [Quizzical](./quizzical) (React)
+-   [Responsive Product card](./Product-Card/) (Tailwind CSS)
 <!-- - [NTF responsive site](./ntf-site) -->
 
 ## Resources
