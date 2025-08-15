@@ -2,6 +2,7 @@ import './App.css'
 import Badge from './components/Badge'
 import Banner from './components/Banner'
 import Card from './components/Card'
+import Testimonials from './components/Testimonials'
 
 function App() {
   return (
@@ -52,6 +53,11 @@ function App() {
       <div className="section">
         <h2>Card</h2>
         <Card title="Easy Deployment" subtitle="Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis." />
+      </div>
+
+      <div className="section">
+        <h2>Testimonials</h2>
+        <Testimonials text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit." name="May Andersons" job="Workcation, CTO" />
       </div>
     </>
   )
