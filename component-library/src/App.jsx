@@ -1,6 +1,7 @@
 import './App.css'
 import Badge from './components/Badge'
 import Banner from './components/Banner'
+import Card from './components/Card'
 
 function App() {
   return (
@@ -46,6 +47,11 @@ function App() {
           <Banner title="There is a problem with your application" color="error" />
           <Banner title="Update available" />
         </div>
+      </div>
+
+      <div className="section">
+        <h2>Card</h2>
+        <Card title="Easy Deployment" subtitle="Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis." />
       </div>
     </>
   )
