@@ -26,33 +26,49 @@ body {
     margin: 0 auto;
     display: flex;
     place-items: center;
-    max-width: 550px;
     min-height: 100vh;
-    border: 1px solid #213547;
 }
-body::before {
+
+#root {
+    width: 650px;
+    height: 600px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(41, 50, 100, 1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#root::before {
     content: "";
-    position: fixed;
+    position: absolute;
     top: 0;
-    right: -15%;
-    width: 100%;
-    height: 100%;
+    right: -3%;
+    width: 200px;
+    height: 200px;
     background-image: url("/public/blobs-top.png");
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    z-index: -1;
 }
-body::after {
+#root::after {
     content: "";
-    position: fixed;
-    bottom: 0;
-    left: -15%;
-    width: 50%;
-    height: 100%;
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 200px;
+    height: 200px;
     background-image: url("/public/blobs-bottom.png");
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    z-index: -1;
 }
 
 h1 {
@@ -89,6 +105,92 @@ button:hover {
 button:focus,
 button:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
+}
+
+.questions form .answers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.questions form h2 {
+    font-family: Karla;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #293264;
+    margin-bottom: 1rem;
+}
+
+.questions form .radio {
+    width: fit-content;
+    padding: 0.25rem 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    border: 1px solid #4D5B9E;
+    background-color: rgba(245, 247, 251, 1);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.questions form .radio input[type="radio"] {
+    display: none;
+}
+
+.questions form .radio:has(input[type="radio"]:checked) {
+    border-color: #293264;
+    background-color: #D6DBF5;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    padding: 0.3rem 0.6rem;
+    border: none;
+}
+
+.questions form .radio label {
+    cursor: pointer;
+}
+
+/* Answer feedback styles */
+.questions form .radio.correct-answer {
+    background-color: #94D7A2 !important;
+    border: none !important;
+    color: #1B5E20 !important;
+}
+
+.questions form .radio.incorrect-answer {
+    background-color: #F8BCBC !important;
+    border: none !important;
+    color: #293264 !important;
+}
+
+.questions form .radio.correct-answer:has(input[type="radio"]:checked),
+.questions form .radio.incorrect-answer:has(input[type="radio"]:checked) {
+    padding: 0.3rem 0.6rem;
+    border: 2px solid;
+}
+
+.questions .score,
+.questions form button[type="submit"] {
+    margin-top: 2rem;
 }
 
 @media (prefers-color-scheme: light) {
