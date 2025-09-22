@@ -9,7 +9,7 @@ function App() {
     <>
       <h1>Component Library</h1>
 
-      <div className="section">
+      {/* <div className="section">
         <h2>Badges</h2>
         <div className="list">
           <Badge label="Badge" color="primary" shape="square" />
@@ -53,7 +53,7 @@ function App() {
       <div className="section">
         <h2>Card</h2>
         <Card title="Easy Deployment" subtitle="Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis." />
-      </div>
+      </div> */}
 
       <div className="section">
         <h2>Testimonials</h2>
