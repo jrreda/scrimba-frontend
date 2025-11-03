@@ -3,13 +3,14 @@ import Badge from './components/Badge'
 import Banner from './components/Banner'
 import Card from './components/Card'
 import Testimonials from './components/Testimonials'
+import Tooltip from './components/Tooltip'
 
 function App() {
   return (
     <>
       <h1>Component Library</h1>
 
-      {/* <div className="section">
+      <div className="section">
         <h2>Badges</h2>
         <div className="list">
           <Badge label="Badge" color="primary" shape="square" />
@@ -53,11 +54,57 @@ function App() {
       <div className="section">
         <h2>Card</h2>
         <Card title="Easy Deployment" subtitle="Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis." />
-      </div> */}
+      </div>
 
       <div className="section">
         <h2>Testimonials</h2>
         <Testimonials text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit." name="May Andersons" job="Workcation, CTO" />
+      </div>
+
+      <div className="section">
+        <h2>Tooltip</h2>
+        <Tooltip
+          title="Archive notes"
+          content="lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam."
+          position="top"
+          delay="150"
+          className=""
+        >
+          <button>Archive</button>
+        </Tooltip>
+
+        <Tooltip
+          title="Info notes"
+          content="lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam."
+          position="bottom"
+          delay="50"
+          className=""
+          color='info'
+        >
+          <p>Info</p>
+        </Tooltip>
+
+        <Tooltip
+          title="Info notes"
+          content="lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam."
+          position="left"
+          delay="100"
+          className=""
+          color='danger'
+        >
+          <span>Danger</span>
+        </Tooltip>
+
+        <Tooltip
+          title="Info notes"
+          content="lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam."
+          position="right"
+          delay="150"
+          className=""
+          color='success'
+        >
+          <div>Success</div>
+        </Tooltip>
       </div>
     </>
   )

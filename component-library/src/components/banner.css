@@ -5,10 +5,13 @@
   display: flex;
   align-items: flex-start;
 
-  width: 696px;
+  min-width: 344px;
+  max-width: 696px;
+  box-sizing: border-box;
+
   gap: 12px;
   border-radius: 6px;
-  padding: 16px;
+  padding: 1rem;
 }
 
 .banner .info {
@@ -33,6 +36,7 @@
   line-height: 20px;
   letter-spacing: 0%;
   margin: 0;
+  text-align: start;
 }
 
 .banner img {
@@ -86,4 +90,30 @@
 
 .banner-neutral p {
   color: #1C51B9;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .banner {
+    width: 100%;
+  }
+
+  .banner img {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
+  .banner h2 {
+    font-size: 12px;
+    line-height: 16px;
+    text-align: start;
+    text-wrap: wrap;
+  }
+
+  .banner p {
+    font-size: 12px;
+    line-height: 16px;
+    text-align: start;
+    text-wrap: wrap;
+  }
 }
