@@ -4,8 +4,11 @@ import Banner from './components/Banner'
 import Card from './components/Card'
 import Testimonials from './components/Testimonials'
 import Tooltip from './components/Tooltip'
+import { useToast } from './components/toast/useToast'
 
 function App() {
+  const toast = useToast()
+
   return (
     <>
       <h1>Component Library</h1>
@@ -63,48 +66,62 @@ function App() {
 
       <div className="section">
         <h2>Tooltip</h2>
-        <Tooltip
-          title="Archive notes"
-          content="lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam."
-          position="top"
-          delay="150"
-          className=""
-        >
-          <button>Archive</button>
-        </Tooltip>
 
-        <Tooltip
-          title="Info notes"
-          content="lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam."
-          position="bottom"
-          delay="50"
-          className=""
-          color='info'
-        >
-          <p>Info</p>
-        </Tooltip>
+        <div className="list list-col">
+          <Tooltip
+            title="Archive notes"
+            content="lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam."
+            position="top"
+            delay="150"
+            className=""
+          >
+            <button>Archive</button>
+          </Tooltip>
 
-        <Tooltip
-          title="Info notes"
-          content="lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam."
-          position="left"
-          delay="100"
-          className=""
-          color='danger'
-        >
-          <span>Danger</span>
-        </Tooltip>
+          <Tooltip
+            title="Info notes"
+            content="lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam."
+            position="bottom"
+            delay="50"
+            className=""
+            color='info'
+          >
+            <p>Info</p>
+          </Tooltip>
 
-        <Tooltip
-          title="Info notes"
-          content="lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam."
-          position="right"
-          delay="150"
-          className=""
-          color='success'
-        >
-          <div>Success</div>
-        </Tooltip>
+          <Tooltip
+            title="Info notes"
+            content="lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam."
+            position="left"
+            delay="100"
+            className=""
+            color='danger'
+          >
+            <span>Danger</span>
+          </Tooltip>
+
+          <Tooltip
+            title="Info notes"
+            content="lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam."
+            position="right"
+            delay="150"
+            className=""
+            color='success'
+          >
+            <div>Success</div>
+          </Tooltip>
+        </div>
+      </div>
+
+      <div className="section">
+        <h2>Toast</h2>
+
+        <div className="list">
+          <button onClick={() => toast.success()}>Show Success Toast</button>
+          <button onClick={() => toast.error('Error', 'Your work has not been saved', 8000)}>Show Error Toast</button>
+          <button onClick={() => toast.warning('Warning', 'Your work has not been saved', 4000)}>Show Warning Toast</button>
+          <button onClick={() => toast.info('Info', 'Your work has not been saved', 6000)}>Show Info Toast</button>
+        </div>
       </div>
     </>
   )
