@@ -20,6 +20,7 @@
 -   [Responsive Product card](./Product-Card/) (Tailwind CSS)
 -   [Quizzical](./quizzical) (React)
 -   [Component Library ++](./component-library) (React)
+-   [LinkedIn Header Generator](./LinkedIn%20Header%20Generator/) (React)
 <!-- - [NTF responsive site](./ntf-site) -->
 
 ## Resources

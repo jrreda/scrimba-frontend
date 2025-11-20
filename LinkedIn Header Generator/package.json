@@ -1,0 +1,19 @@
+{
+  "name": "Scrim-s01r9ae",
+  "description": "https://scrimba.com/frontend-path-c0j/~015f/s0nq48rg9t/head",
+  "scripts": {
+    "watch": "webpack -w",
+    "build": "webpack"
+  },
+  "dependencies": {
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "webpack": "^2.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.0",
+    "babel-loader": "^7.0",
+    "babel-preset-env": "*",
+    "babel-preset-react": "*"
+  }
+}
